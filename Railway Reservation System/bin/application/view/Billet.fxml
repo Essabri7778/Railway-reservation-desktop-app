@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane cacheShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="190.0" prefWidth="493.0" style="-fx-background-radius: 15px;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="billet" prefHeight="190.0" prefWidth="493.0" style="-fx-background-color: white; -fx-background-radius: 15px;">
+         <children>
+            <Line endX="124.33334350585938" endY="-1.52587890625E-5" layoutX="194.0" layoutY="111.0" startX="-169.33331298828125" stroke="#c0bcbc" />
+            <Text fill="#4a20aa" layoutX="48.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Départ" />
+            <Text fill="#4a20aa" layoutX="239.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arrivée" />
+            <Text layoutX="52.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="28.13671875" />
+            <Button fx:id="reserver_btn" layoutX="355.0" layoutY="125.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="99.0" style="-fx-background-color: #4a20aa; -fx-background-radius: 15px;" text="Réserver" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="time_depart" layoutX="36.0" layoutY="51.0" prefHeight="20.0" prefWidth="60.0" text="/heur_dep" textFill="#4a20aa">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="ville_depart" layoutX="44.0" layoutY="77.0" prefHeight="17.0" prefWidth="44.0" text="vil_dep" textFill="#4a20aa" />
+            <Label layoutX="141.0" layoutY="41.0" text="Duree" textFill="#4a20aa">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="ville_arrive" layoutX="236.0" layoutY="77.0" prefHeight="17.0" prefWidth="44.0" text="vill_arr" textFill="#4a20aa" />
+            <Label fx:id="time_arrive" layoutX="232.0" layoutY="51.0" prefHeight="20.0" prefWidth="51.0" text="heur_arr" textFill="#4a20aa">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="prix" layoutX="379.0" layoutY="70.0" prefHeight="32.0" prefWidth="51.0" text="//Prix" textFill="#ef2e41">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="train_name" layoutX="113.0" layoutY="125.0" text="nom_tr" textFill="#4a20aa" />
+            <Label fx:id="classe" layoutX="118.0" layoutY="148.0" text="cls_tr" textFill="#4a20aa" />
+            <Label layoutX="379.0" layoutY="51.0" prefHeight="17.0" prefWidth="75.0" text="à partir de" textFill="#4a20aa">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Line endX="8.33331298828125" endY="-35.66667556762695" layoutX="328.0" layoutY="47.0" startX="8.33331298828125" startY="129.6666717529297" stroke="#c0bcbc" />
+            <Line endX="41.33329772949219" layoutX="157.0" layoutY="70.0" startX="-36.00000762939453" stroke="#c0bcbc" />
+            <Circle fill="WHITE" layoutX="117.0" layoutY="71.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="196.0" layoutY="70.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

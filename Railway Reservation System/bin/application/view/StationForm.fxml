@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="16.0" layoutY="26.0" prefHeight="360.0" prefWidth="270.0" style="-fx-background-color: #ebdff4; -fx-background-radius: 15px;">
+         <children>
+            <Label layoutX="91.0" layoutY="24.0" prefHeight="35.0" prefWidth="87.0" text="Station" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="page_station_text" layoutX="19.0" layoutY="87.0" prefHeight="25.0" prefWidth="165.0" style="-fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent; -fx-border-color: #4B0082;" />
+            <Button fx:id="page_station_btn" layoutX="196.0" layoutY="87.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="54.0" style="-fx-background-radius: 6px; -fx-background-color: #4B0082;" text="Add" textFill="#faf4fd" />
+            <TableView fx:id="page_station_table" layoutX="18.0" layoutY="136.0" prefHeight="200.0" prefWidth="233.0">
+              <columns>
+                <TableColumn prefWidth="232.0000203450521" text="Available satations" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="close_btn" layoutX="257.0" layoutY="1.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="36.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="13.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/WhatsApp%20Image%202022-12-19%20à%2020.28.52.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fx:id="hidde_btn" fitHeight="15.0" fitWidth="18.0" layoutX="231.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/WhatsApp%20Image%202022-12-19%20à%2020.28.521.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

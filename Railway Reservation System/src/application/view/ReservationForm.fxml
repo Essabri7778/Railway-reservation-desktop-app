@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="696.0" style="-fx-background-color: #4B0082;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane focusTraversable="true" layoutX="32.0" layoutY="167.0" prefHeight="252.0" prefWidth="640.0" style="-fx-background-color: #ffff; -fx-background-radius: 15px;">
+         <children>
+            <Text fill="#4a20aa" layoutX="24.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ma gare de départ :" wrappingWidth="115.47012329101562" />
+            <Text fill="#4a20aa" layoutX="24.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ma gare d'arrivée :" wrappingWidth="115.47012329101562" />
+            <DatePicker fx:id="date_depart_picker" cache="true" layoutX="185.0" layoutY="69.0" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-width: 0.7px 0.7px 0.7px 0.7px; -fx-border-color: #4A20AA; -fx-background-radius: 18px; -fx-border-radius: 13px;" AnchorPane.leftAnchor="185.0" AnchorPane.rightAnchor="305.0">
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </DatePicker>
+            <ComboBox fx:id="station_depart_text" layoutX="14.0" layoutY="69.0" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-width: 0.7px 0.7px 0.7px 0.7px; -fx-border-color: #4A20AA; -fx-background-radius: 18px; -fx-border-radius: 13px;" />
+            <ComboBox fx:id="station_arrive_text" layoutX="14.0" layoutY="168.0" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: transparent; -fx-border-width: 0.7px 0.7px 0.7px 0.7px; -fx-border-color: #4A20AA; -fx-background-radius: 18px; -fx-border-radius: 13px;" />
+            <Text fill="#4a20aa" layoutX="194.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ma date de départ :" wrappingWidth="115.47012329101562" />
+            <Spinner fx:id="spinnerAdult" cache="true" editable="true" layoutX="432.0" layoutY="69.0" prefHeight="35.0" prefWidth="57.0" style="-fx-background-color: transparent; -fx-border-width: 1px 1px 1px 1px; -fx-border-color: #4A20AA; -fx-background-radius: 18px; -fx-border-radius: 13px;" />
+            <ComboBox fx:id="class_combo" layoutX="185.0" layoutY="168.0" prefHeight="35.0" prefWidth="150.0" promptText="Classe " style="-fx-background-color: transparent; -fx-border-width: 0.7px 0.7px 0.7px 0.7px; -fx-border-color: #4A20AA; -fx-background-radius: 18px; -fx-border-radius: 13px;" />
+            <Text fill="#4a20aa" layoutX="365.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voyageurs :" wrappingWidth="115.47012329101562" />
+            <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="13.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/map.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="13.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/map.png" />
+               </image>
+            </ImageView>
+            <Text fill="#4a20aa" layoutX="185.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mon cofort :" wrappingWidth="115.47012329101562" />
+            <Button fx:id="btn_search" layoutX="547.0" layoutY="108.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="57.0" style="-fx-background-color: #4a20aa;">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Spinner fx:id="spinnerChild" cache="true" cacheShape="false" editable="true" layoutX="432.0" layoutY="168.0" prefHeight="35.0" prefWidth="57.0" style="-fx-background-color: transparent; -fx-border-width: 1px 1px 1px 1px; -fx-border-color: #4A20AA; -fx-background-radius: 18px; -fx-border-radius: 13px;" />
+            <Label layoutX="365.0" layoutY="78.0" prefHeight="17.0" prefWidth="43.0" text="Adult :" textFill="#4a20aa" />
+            <Label layoutX="365.0" layoutY="177.0" text="Enfant :" textFill="#4a20aa" />
+         </children>
+      </AnchorPane>
+      <Text fill="WHITE" layoutX="32.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FasTrain" wrappingWidth="86.66667683919263">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="hide_btn" layoutX="613.0" layoutY="14.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="13.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/WhatsApp%20Image%202022-12-19%20à%2020.28.521.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="close_btn" layoutX="643.0" layoutY="14.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="23.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/WhatsApp%20Image%202022-12-19%20à%2020.28.52.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <AnchorPane layoutX="64.0" layoutY="124.0" prefHeight="56.0" prefWidth="200.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15px;">
+         <children>
+            <Text fill="#4a20aa" layoutX="40.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="J'achète mon billet" wrappingWidth="138.80337524414062">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="24.0" fitWidth="35.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/bb.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="label_id" layoutX="164.0" layoutY="38.0" text="Label" textFill="#fffdfd" visible="false" />
+   </children>
+</AnchorPane>

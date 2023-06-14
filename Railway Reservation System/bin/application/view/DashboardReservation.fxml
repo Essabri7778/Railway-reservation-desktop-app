@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="970.0" styleClass="column-header-background" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="554.0" prefWidth="217.0" style="-fx-background-color: #4B0082;">
+         <children>
+            <Button fx:id="DashboardTrain" alignment="BASELINE_LEFT" layoutX="-1.0" layoutY="214.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="217.0" style="-fx-background-color: #4B0082;" text="Trains" textAlignment="CENTER" textFill="#decbed">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="DashboardTrajet" alignment="BASELINE_LEFT" layoutX="-1.0" layoutY="249.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="217.0" style="-fx-background-color: #4B0082;" text="Trajet" textFill="#decbed">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="DashboardClient" alignment="BASELINE_LEFT" layoutX="-1.0" layoutY="284.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="217.0" style="-fx-background-color: #4B0082;" text="Clients" textFill="#decbed">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="DashboardReservation" alignment="BASELINE_LEFT" layoutX="-1.0" layoutY="319.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="217.0" style="-fx-background-color: #4B0082;" text="Réservation" textFill="#decbed">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text layoutX="64.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FasTrain" AnchorPane.leftAnchor="37.0" AnchorPane.topAnchor="127.15234375">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8878167867660522" green="0.8099415302276611" blue="0.9473684430122375" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <Button fx:id="DashboardDeconnexion" alignment="BASELINE_LEFT" layoutX="2.0" layoutY="354.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="217.0" style="-fx-background-color: #4B0082;" text="Deconnexion" textFill="#ebdff4">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="228.0" layoutY="33.0" prefHeight="505.0" prefWidth="725.0" style="-fx-background-color: #ebdff4; -fx-background-radius: 15px;">
+         <children>
+            <TableView fx:id="table_reservation" layoutX="7.0" layoutY="60.0" onMouseClicked="#rowClicked" prefHeight="431.0" prefWidth="711.0" style="-fx-background-color: #ebdff4; -fx-border-image-width: 1px 1px 1px 1px; -fx-border-color: #4B0082; -fx-column-header-background-color: #4B0082;">
+              <columns>
+                <TableColumn fx:id="reservation_id_column" minWidth="0.0" prefWidth="0.0" text="reservation_id" visible="false" />
+                <TableColumn fx:id="from_station_column" prefWidth="90.0" text="Station depart" />
+                  <TableColumn fx:id="to_station_column" prefWidth="90.0" style="fx-alignment: center;" text="Station arrivee" />
+                  <TableColumn fx:id="hour_depart_column" prefWidth="90.0" text="Heure depart" />
+                  <TableColumn fx:id="hour_arrive_column" prefWidth="90.0" text="Heure arrive" />
+                  <TableColumn fx:id="date_journey_column" prefWidth="140.0" text="Date voyage" />
+                  <TableColumn fx:id="price_column" prefWidth="90.0" text="Prix" />
+                  <TableColumn fx:id="cin_column" prefWidth="90.0" text="CIN client" />
+                  <TableColumn fx:id="class_column" prefWidth="90.0" text="Classe" />
+                  <TableColumn fx:id="nbr_passengers_column" prefWidth="90.0" text="Nbr passagers" />
+                  <TableColumn fx:id="num_seats_column" prefWidth="90.0" text="num seats" />
+                  <TableColumn fx:id="train_column" prefWidth="90.0" text="Train" />
+                  <TableColumn fx:id="date_reservation_column" prefWidth="140.0" text="Date reservation" />
+              </columns>
+            </TableView>
+            <TextField fx:id="search_text" layoutX="314.0" layoutY="16.0" prefHeight="25.0" prefWidth="157.0" promptText="Search" style="-fx-border-width: 2px;">
+               <opaqueInsets>
+                  <Insets left="10.0" top="20.0" />
+               </opaqueInsets></TextField>
+            <Button fx:id="btn_delete" layoutX="656.0" layoutY="15.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="61.0" style="-fx-background-radius: 6px; -fx-background-color: #4B0082;" text="Delete" textFill="#faf4fd">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <TextField fx:id="id_reservation_text" layoutX="486.0" layoutY="16.0" prefHeight="25.0" prefWidth="157.0" promptText="Reservation id" style="-fx-border-width: 2px;">
+               <opaqueInsets>
+                  <Insets left="10.0" top="20.0" />
+               </opaqueInsets>
+            </TextField>
+         </children>
+      </AnchorPane>
+      <Button fx:id="close_btn" layoutX="918.0" layoutY="8.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="36.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="13.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/WhatsApp%20Image%202022-12-19%20à%2020.28.52.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="hide_btn" layoutX="882.0" layoutY="8.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="36.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/WhatsApp%20Image%202022-12-19%20à%2020.28.521.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

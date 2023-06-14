@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="970.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="554.0" prefWidth="217.0" style="-fx-background-color: #4B0082;">
+         <children>
+            <Button fx:id="DashboardTrain" alignment="BASELINE_LEFT" layoutX="-1.0" layoutY="199.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="217.0" style="-fx-background-color: #4B0082;" text="Train" textFill="#decbed">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="DashboardTrajet" alignment="BASELINE_LEFT" layoutX="-1.0" layoutY="234.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="217.0" style="-fx-background-color: #4B0082;" text="Trajet" textFill="#decbed">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="DashboardClient" alignment="BASELINE_LEFT" layoutX="-1.0" layoutY="269.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="217.0" style="-fx-background-color: #4B0082;" text="Client" textFill="#decbed">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="DashboardReservation" alignment="BASELINE_LEFT" layoutX="-1.0" layoutY="304.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="217.0" style="-fx-background-color: #4B0082;" text="Réservation" textFill="#decbed">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text layoutX="38.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FasTrain">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8878167867660522" green="0.8099415302276611" blue="0.9473684430122375" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <Button fx:id="DashboardDeconnexion" alignment="BASELINE_LEFT" layoutX="-1.0" layoutY="339.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="217.0" style="-fx-background-color: #4B0082;" text="Deconnexion" textFill="#ebdff4">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="224.0" layoutY="21.0" prefHeight="189.0" prefWidth="731.0" style="-fx-background-color: #ebdff4; -fx-background-radius: 15px;">
+         <children>
+            <Text layoutX="127.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passenger-CIN :" wrappingWidth="86.36651611328125" />
+            <Text layoutX="388.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Passenger-name :" wrappingWidth="98.45709228515625" />
+            <TextField fx:id="CustumerCIN" layoutX="225.0" layoutY="23.0" prefHeight="25.0" prefWidth="105.0" />
+            <TextField fx:id="CustumerName" layoutX="498.0" layoutY="23.0" prefHeight="25.0" prefWidth="105.0" />
+            <Text layoutX="127.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passenger-Tele:" wrappingWidth="98.45709228515625" />
+            <Text layoutX="2.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="122.45709228515625" />
+            <Text layoutX="97.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Passenger-password :" wrappingWidth="129.7904052734375" />
+            <TextField layoutX="225.0" layoutY="67.0" prefHeight="25.0" prefWidth="105.0" />
+            <TextField fx:id="CustumerEmail" layoutX="497.0" layoutY="68.0" prefHeight="25.0" prefWidth="105.0" />
+            <Button fx:id="UpdateBtn" layoutX="574.0" layoutY="149.0" mnemonicParsing="false" style="-fx-background-radius: 6px; -fx-background-color: #4B0082;" text="Update" textFill="#faf4fd" />
+            <Button fx:id="AddBtn" layoutX="437.0" layoutY="149.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="54.0" style="-fx-background-radius: 6px; -fx-background-color: #4B0082;" text="Add" textFill="#faf4fd" />
+            <Button fx:id="ClearBtn" layoutX="507.0" layoutY="149.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" style="-fx-background-radius: 6px; -fx-background-color: #4B0082;" text="Clear" textFill="#faf4fd" />
+            <Button fx:id="DeleteBtn" layoutX="651.0" layoutY="149.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" style="-fx-background-radius: 6px; -fx-background-color: #4B0082;" text="Delete" textFill="#faf4fd" />
+            <Text layoutX="393.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passenger-email :" wrappingWidth="98.45709228515625" />
+            <PasswordField fx:id="CustumerPassword" layoutX="223.0" layoutY="108.0" prefHeight="25.0" prefWidth="105.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="224.0" layoutY="230.0" prefHeight="310.0" prefWidth="731.0" style="-fx-background-color: #ebdff4; -fx-background-radius: 15px;">
+         <children>
+            <TableView fx:id="CustumersTable" layoutX="8.0" layoutY="55.0" prefHeight="243.0" prefWidth="710.0" style="-fx-background-color: #ebdff4; -fx-border-image-width: 1px 1px 1px 1px; -fx-border-color: #4B0082; -fx-column-header-background-color: #4B0082;">
+              <columns>
+                <TableColumn fx:id="ColumnCin" prefWidth="118.66665649414062" text="Pass-CIN" />
+                <TableColumn fx:id="ColumnName" prefWidth="140.66668701171875" text="Pass-name" />
+                  <TableColumn fx:id="ColumnAge" prefWidth="127.33331298828125" style="fx-alignment: center;" text="Pass-age" />
+                  <TableColumn fx:id="ColumnEmail" prefWidth="162.66665649414062" text="Pass-email" />
+                  <TableColumn fx:id="ColumnPass" prefWidth="159.33331298828125" text="pass-password" />
+              </columns>
+            </TableView>
+            <TextField fx:id="SearchField" layoutX="8.0" layoutY="14.0" prefHeight="25.0" prefWidth="157.0" promptText="Search" style="-fx-border-width: 2px;">
+               <opaqueInsets>
+                  <Insets left="10.0" top="20.0" />
+               </opaqueInsets></TextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

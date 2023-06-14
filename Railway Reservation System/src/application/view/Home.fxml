@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="693.0" style="-fx-background-color: #4B0082;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="167.0" fitWidth="178.0" layoutX="253.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/WhatsApp%20Image%202022-12-19%20à%2020.28.522.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="202.0" layoutY="259.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Bienvenue sur FasTrain" wrappingWidth="290.1367645263672">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="196.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recherchez vos voyages, trajets et bien plus encore...">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Button fx:id="login_btn" layoutX="200.0" layoutY="326.0" mnemonicParsing="false" onAction="#switchToLogin" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #FFFFFF;" text="S'IDENTIFIER" textFill="INDIGO">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="inscription_btn" layoutX="373.0" layoutY="326.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: #FFFFFF;" text="S'ENREGISTRER" textFill="INDIGO">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Hyperlink fx:id="reservation_btn" layoutX="275.0" layoutY="410.0" text="Passer cette étape →" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Hyperlink>
+      <Button layoutX="615.0" layoutY="1.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="24.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="18.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic></Button>
+      <Button layoutX="657.0" layoutY="1.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="36.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fx:id="close_btn" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Downloads/delete.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="364.0" style="-fx-background-color: #4B0082;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="#f4efef" layoutX="87.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FasTrain" wrappingWidth="189.71229553222656">
+               <font>
+                  <Font name="Corbel" size="48.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="162.0" fitWidth="177.0" layoutX="85.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/WhatsApp%20Image%202022-12-19%20à%2020.28.522.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="log_up" layoutX="112.0" layoutY="200.0" promptText="User email" style="-fx-background-color: transparent; -fx-border-color: #4B0082; -fx-border-width: 0px 0px 2.5px 0px;" />
+            <PasswordField fx:id="password_up" layoutX="112.0" layoutY="246.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #4B0082; -fx-border-width: 0px 0px 2.5px 0px;" />
+            <Button fx:id="login_btn" layoutX="139.0" layoutY="323.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="77.0" style="-fx-background-color: #4B0082;" text="Login" textFill="#e2d1eb">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Button>
+            <Hyperlink layoutX="96.0" layoutY="454.0" text="Forgot Your Password ?" textFill="INDIGO" />
+            <Text fill="INDIGO" layoutX="119.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Users Login">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Text>
+            <Button layoutX="295.0" layoutY="2.0" minHeight="20.0" minWidth="25.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="25.0" style="-fx-background-color: WHtransparentTE;" textAlignment="CENTER" textFill="WHITE" />
+            <ImageView fitHeight="44.0" fitWidth="41.0" layoutX="65.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/WhatsApp%20Image%202022-12-19%20à%2020.28.523.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="41.0" layoutX="65.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/c.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="295.0" layoutY="11.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="28.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="16.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/WhatsApp%20Image%202022-12-19%20à%2020.28.52.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="261.0" layoutY="11.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="33.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/WhatsApp%20Image%202022-12-19%20à%2020.28.521.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+   </center>
+</BorderPane>
